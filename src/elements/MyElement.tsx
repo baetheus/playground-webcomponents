@@ -1,5 +1,4 @@
-import * as React from 'react';
-import { render } from 'react-dom';
+import { render } from 'inferno';
 
 import { MyComponent } from '../components';
 
@@ -17,7 +16,7 @@ export class MyElement extends HTMLElement {
   }
 
   private render() {
-    render(<MyComponent {...this.getProps()} />, this);
+    render(MyComponent({ ...this.getProps() }), this);
   }
 
   static get observedAttributes() {

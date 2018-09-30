@@ -12,6 +12,7 @@
     "noUnusedParameters": true,
     "target": "es5",
     "lib": ["es5", "es6", "dom"],
-    "jsx": "react"
+    "jsx": "react",
+    "jsxFactory": "createElement"
   }
 }

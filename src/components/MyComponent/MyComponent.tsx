@@ -1,4 +1,4 @@
-import * as React from 'react';
+import { createElement } from 'inferno-create-element';
 
 export interface Props {
   age: number;

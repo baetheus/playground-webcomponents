@@ -16,7 +16,7 @@ export class MyElement extends HTMLElement {
   }
 
   private render() {
-    render(MyComponent({ ...this.getProps() }), this);
+    render(MyComponent(this.getProps()), this);
   }
 
   static get observedAttributes() {

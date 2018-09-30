@@ -1,0 +1,23 @@
+<html>
+
+<head>
+  <title>React Webcomponent Example</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.0.2/custom-elements-es5-adapter.js"></script>
+  <script src="./elements/index.ts"></script>
+</head>
+
+<body>
+  <my-element id="myElement" age="0" sex="Femme" location="Here"></my-element>
+
+  <script>
+    let j = 0;
+    setInterval(() => {
+      console.log('Changing Element Age To:', j);
+      const el = document.getElementById('myElement');
+      el.setAttribute('age', j);
+      j++;
+    }, 2 * 1000);
+  </script>
+</body>
+
+</html>
